@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD de Gestão de Produtos de uma Loja de Roupas</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>GESTÃO DE PRODUTOS DE UMA LOJA DE ROUPAS</h1>
+
+  <form id="productForm">
+    <label for="nameInput">Nome:</label>
+    <input type="text" id="nameInput" required><br><br>
+
+    <label for="categoryInput">Categoria:</label>
+    <input type="text" id="categoryInput" required><br><br>
+
+    <label for="priceInput">Preço:</label>
+    <input type="number" id="priceInput" step="0.01" required><br><br>
+
+    <label for="descriptionInput">Descrição:</label>
+    <textarea id="descriptionInput" required></textarea><br><br>
+
+    <label for="imageInput">Imagem:</label>
+    <input type="file" id="imageInput" accept="image/*" required><br><br>
+
+    <button type="submit">Adicionar Produto</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Preço</th>
+        <th>Descrição</th>
+        <th>Imagem</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="productTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
